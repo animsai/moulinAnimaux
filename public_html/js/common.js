@@ -21,8 +21,8 @@ var CONSINGES = "consignes";
 
 
 var userScore = [
-    {user: "test", levelId: "animaux1", theme: "animaux", score: 1},
-    {user: "test", levelId: "animaux2", theme: "animaux", score: 2}
+    /*{user: "test", levelId: "animaux1", theme: "animaux", score: 1},
+    {user: "test", levelId: "animaux2", theme: "animaux", score: 2}*/
 ];
 
 var InteractionTypeEnum = {
@@ -70,7 +70,10 @@ var nav_fileManifest = [
     //background
     {id: "scene", src: IMGFOLDER + NAV_FOLDER + "niveau1_decor_grand.png"},
     //level images
-    {id: "animaux", src: IMGFOLDER + NAV_FOLDER + "niveau1_animaux.png", x: 40, y: 180}
+    {id: "animaux", src: IMGFOLDER + NAV_FOLDER + "niveau1_animaux.png", x: 40, y: 180},
+        //instruction and feedback sounds
+    {id: "nav_consignes_fb", src: SNDFOLDER + NAV_FOLDER + "consignes.wav"},
+    {id: "subNav_consignes_fb", src: SNDFOLDER + NAV_FOLDER + "son_5.wav"}
 ];
 
 var animaux_nav_fileManifest = [
