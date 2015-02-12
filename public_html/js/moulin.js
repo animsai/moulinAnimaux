@@ -53,7 +53,7 @@
         },
         loadLevelAssets: function() {
             this.levelAssets = new Moulin.MediaLoader();
-            for (var i = 0; i < levels.length; i+=4) { // load one level out of 4 to improve perforamance on 3G network
+            for (var i = 0; i < levels.length; i+=2) { // load one level out of 2 to improve perforamance on 3G network
                 if (this.loadedLevels.indexOf(levels[i].id) === -1) { //check if level was not loaded separatly to avoid double load
                     this.levelAssets.addOneFileManifest(eval(levels[i].media));
                     this.moulinProxy = new createjs.proxy(this.handleLevelAssetsComplete, this, levels[i].id);
@@ -78,7 +78,8 @@
         },
         handleStartClick: function() {
             this.stage.removeAllEventListeners("click");
-            nav = new Moulin.Navigation(nav_fileManifest, this.stage);
+            //go directly to animals subnavigation
+            nav = new Moulin.Navigation(nav_fileManifest, this.stage, false, "animaux");
         },
         handleLoadProgress: function() {
             this.bar.loadingBar.scaleX = this.coreAssets.mediaQueue.progress * this.bar.width;
