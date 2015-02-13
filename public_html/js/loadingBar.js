@@ -40,7 +40,7 @@
 
         //placing of the container
         this.x = 280;//Math.round(window.screen.width / 2 - this.width / 2);
-        this.y =  100;//Math.round(window.screen.height / 2 - this.height / 2);
+        this.y =  450;//Math.round(window.screen.height / 2 - this.height / 2);
 
         //creating the loading bar   
         this.loadingBar = new createjs.Shape();
