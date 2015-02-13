@@ -43,7 +43,7 @@
             background = new createjs.Bitmap(this.subFileManifest[0].src);
             this.stage.addChild(background);
             //add back button
-            Utils.addBackButton(this.stage, theme, true);
+            //Utils.addBackButton(this.stage, theme, true);
             createjs.Sound.stop(); //stop all playing sounds before playing instructions for sub navigation
             this.handleSoundPlay(null, "subNav_consignes_fb");
             this.addSubNavigationItems();
