@@ -82,7 +82,7 @@
         addRepeatButton: function() {
             var repeatImg = Utils.generateBitmapItem(repeatButtonFile.src, repeatButtonFile.x, repeatButtonFile.y, 300, true);
             this.levelProxy = createjs.proxy(this.replayLastSound, this);
-            repeatImg.addEventListener("pressup", this.levelProxy)
+            repeatImg.addEventListener("pressup", this.levelProxy);
             this.stage.addChild(repeatImg);
         },
         //get a given item from the current file manifest
